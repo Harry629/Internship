@@ -1,0 +1,6 @@
+subscription_id        = "d656e6fe-d545-4e25-9ccb-23921b4746f8"
+aks_loadbalancer_ip    = "52.234.175.207"
+location               = "East US"
+vnet_address_space     = "10.0.0.0/16"
+firewall_subnet_prefix = "10.0.2.0/24"
+default_route_name     = "cmtr-o29nc6fz-mod9-default-route"
