@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: devomimage 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devomimage
+  template:
+    metadata:
+      labels:
+        app: devomimage 
+    spec:
+      containers:
+        - name: devomimage 
+          image: devomacr.azurecr.io/devomimage
+          ports:
+          - containerPort: 3000
